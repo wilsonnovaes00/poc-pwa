@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblia Sagrada</title>
+  <title>Título aqui</title>
   <!-- <link rel="stylesheet" type="text/css" href="styles/inline.css"> -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/font-awesome.css">
   <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/simple-sidebar.css">
   <link rel="stylesheet" href="styles/custom.css">
 
   <!-- TODO add manifest here -->
@@ -26,17 +27,51 @@
 <body>
 
   <header class="header">
+    
+    
     <h1 class="header__title">Título Aqui</h1>
-    <button><i class="fa fa-bars"></i></button>
+    <a href="#menu-toggle" id="menu-toggle" class="fa fa-bars btn-rigth"></a>
+    
   </header>
 
   <main class="main">
-    
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Raquel =]</a>
+                </li>
+                <li>
+                    <a href="#">Pedro =]</a>
+                </li>
+                <li>
+                    <a href="#">Edwi =]</a>
+                </li>
+                <li>
+                    <a href="#">Wilson</a>
+                </li>
+            </ul>
+        </div>
+    </div>
   </main>
 <button class="btn btn-primary"> AQUI</button>
+
+</body>
+
   <script src="scripts/app.js" async></script>
   <script src="scripts/jquery-3.2.1.min.js"></script>
   <script src="scripts/bootstrap.min.js"></script>
-
-</body>
+  <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
 </html>
