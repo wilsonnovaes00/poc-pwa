@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "PWA da Bibila Sagrada",
   "main": "server.js",
-  "repository": "https://github.com/pedrualves/simple-pwa.git",
+  "repository": "https://github.com/wilsonnovaes00/poc-pwa",
   "author": "Wilson Novaes",
   "dependencies": {
     "angular-animate": "^1.6.5",
