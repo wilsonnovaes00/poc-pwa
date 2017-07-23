@@ -1,2 +1,2 @@
 # simple-pwa
-simple test study progressive web app
+PWA Biblia Sagrada Poc
