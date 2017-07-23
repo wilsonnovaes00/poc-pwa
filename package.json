@@ -1,11 +1,12 @@
 {
-  "name": "simplepwa",
+  "name": "Biblia Sagrada PWA",
   "version": "1.0.0",
-  "description": "simple progressive web app",
+  "description": "PWA da Bibila Sagrada",
   "main": "server.js",
   "repository": "https://github.com/pedrualves/simple-pwa.git",
-  "author": "Pedro Alves",
+  "author": "Wilson Novaes",
   "dependencies": {
+    "angular-animate": "^1.6.5",
     "express": "~3.2.4"
   },
   "scripts": {
