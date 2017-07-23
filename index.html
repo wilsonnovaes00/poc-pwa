@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="initial">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +11,9 @@
   <link rel="stylesheet" href="client/styles/simple-sidebar.css">
   <link rel="stylesheet" href="client/styles/custom.css">
 
-  <link rel="stylesheet" href="node_modules/angular-animate/angular-animate.min.js">
 
   <!-- TODO add manifest here -->
-  <link rel="manifest" href="client//manifest.json">
+  <link rel="manifest" href="client/manifest.json">
   
   <!-- Add to home screen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,7 +33,7 @@
         
         <div class="col-md-6">
         
-           
+           {{1+1}}
         
         </div>
 
@@ -73,9 +72,11 @@
 
 </body>
 
-  <script src="scripts/app.js" async></script>
-  <script src="scripts/jquery-3.2.1.min.js"></script>
-  <script src="scripts/bootstrap.min.js"></script>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.min.js"/>
+  <script src="client/scripts/bootstrap.min.js"></script>
+  <script src="client/scripts/jquery-3.2.1.min.js"></script>
+  <script src="app.js"></script>
   <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
