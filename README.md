@@ -1,2 +1,2 @@
-# simple-pwa
-PWA Biblia Sagrada Poc
+# POC-pwa
+PWA Biblia Sagrada POC
