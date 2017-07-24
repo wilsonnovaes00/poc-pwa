@@ -2,7 +2,7 @@
   "name": "Biblia Sagrada PWA",
   "version": "1.0.0",
   "description": "PWA da Bibila Sagrada",
-  "main": "server.js",
+  "main": "index.js",
   "repository": "https://github.com/wilsonnovaes00/poc-pwa",
   "author": "Wilson Novaes",
   "dependencies": {
