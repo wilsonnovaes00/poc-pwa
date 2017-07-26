@@ -1,86 +1,76 @@
 <!DOCTYPE html>
 <html ng-app="initial">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Título aqui</title>
-  <link rel="stylesheet" href="client/styles/normalize.css">
-  <link rel="stylesheet" href="client/styles/font-awesome.css">
-  <link rel="stylesheet" href="client/styles/bootstrap.min.css">
-  <link rel="stylesheet" href="client/styles/simple-sidebar.css">
-  <link rel="stylesheet" href="client/styles/custom.css">
-
-
-  <!-- TODO add manifest here -->
-  <link rel="manifest" href="client/manifest.json">
-  
-  <!-- Add to home screen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Biblia Sagrada">
-  <link rel="apple-touch-icon" href="client/images/icons/152x152.png">
-  <meta name="msapplication-TileImage" content="client/images/icons/144x144.png">
-  <meta name="msapplication-TileColor" content="#2F3BA2">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título aqui</title>
+    <link rel="stylesheet" href="client/styles/normalize.css">
+    <link rel="stylesheet" href="client/styles/font-awesome.css">
+    <link rel="stylesheet" href="client/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="client/styles/simple-sidebar.css">
+    <link rel="stylesheet" href="client/styles/custom.css">
+    <!-- TODO add manifest here -->
+    <link rel="manifest" href="client/manifest.json">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Biblia Sagrada">
+    <link rel="apple-touch-icon" href="client/images/icons/152x152.png">
+    <meta name="msapplication-TileImage" content="client/images/icons/144x144.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
 </head>
 
 <body>
-
-    
-    <div class="col-md-12 header__title">
-    
-        <a href="#menu-toggle" id="menu-toggle" class="fa fa-bars  btn-rigth pull-right"></a>
-        
-        <div class="col-md-6">
-        
-           {{1+1}}
-        
-        </div>
-
-    </div>   
-    
-        
-
-  <main class="main">
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Menu
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Raquel =]</a>
-                </li>
-                <li>
-                    <a href="#">Pedro =]</a>
-                </li>
-                <li>
-                    <a href="#">Edwi =]</a>
-                </li>
-                <li>
-                    <a href="#">Wilson N</a>
-                </li>
-            </ul>
+    <div class="row header__title">
+        <div class="col-md-6 col-xs-6">{{1+1}}</div>
+        <div class="col-md-6 col-xs-6">
+            <div id="wrap pull-right col-md-6 col-xs-6">
+                <form action="" autocomplete="on">
+                    <input id="search" name="search" type="text" placeholder="Pesquisar" class="col-xs-6">
+                    <input id="search_submit" value="Rechercher" type="submit">
+                </form>
+            </div>
         </div>
     </div>
-  </main>
-
-
+    <main class="main">
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Raquel =]</a>
+                    </li>
+                    <li>
+                        <a href="#">Pedro =]</a>
+                    </li>
+                    <li>
+                        <a href="#">Edwi =]</a>
+                    </li>
+                    <li>
+                        <a href="#">Wilson N</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
-
-  <script src="node_modules/angular/angular.min.js"></script>
-  <script src="node_modules/angular-animate/angular-animate.min.js"/>
-  <script src="client/scripts/bootstrap.min.js"></script>
-  <script src="client/scripts/jquery-3.2.1.min.js"></script>
-  <script src="app.js"></script>
-  <script>
-    $("#menu-toggle").click(function(e) {
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-animate/angular-animate.min.js" />
+<script src="client/scripts/bootstrap.min.js"></script>
+<script src="client/scripts/jquery-3.2.1.min.js"></script>
+<script src="app.js"></script>
+<script>
+    $("#menu-toggle").click(function (e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-  </script>
+</script>
+
 </html>
